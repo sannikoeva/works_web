@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Рейтинг кафе — Лучшие кафе Москвы</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body id="top">
+<header>
+  <a class="logo" href="index.html" title="На главную"><img src="images/logo.svg" width="44" height="44" alt="Логотип"><span>Лучшие кафе Москвы</span></a>
+  <nav>
+    <div class="row"><a href="index.html">Главная</a> <a href="cafes.html" class="active" aria-current="page">Рейтинг</a> <a href="center.html">Центр</a> <a href="coffee.html">Кофе и десерты</a> <a href="tips.html">Советы</a> <a href="contacts.html">Контакты</a> <a href="order.html">Бронь и отзыв</a> <a href="tips.html#checklist">Чек-лист (закладка)</a></div>
+    <div class="row small">Задания JS: <a href="dom1.html">DOM_JS. Считываем информацию из DOM</a> <a href="dom2.html">Изменяем кириллицу на латиницу по клику</a> <a href="dom3.html">Решение алгоритмической задачи</a></div>
+    <div class="row small">Внешние сайты:
+      <a href="https://yandex.ru/maps/" target="_blank" rel="noopener"><img src="images/ic_map.svg" width="20" height="20" alt="Карта"> Яндекс Карты</a>
+      <a href="https://2gis.ru/moscow" target="_blank" rel="noopener">2ГИС</a>
+      <a href="https://www.afisha.ru/msk/restaurants/" target="_blank" rel="noopener">Афиша</a></div>
+  </nav>
+</header>
+<main>
+<h1>Лучшие кафе Москвы: рейтинг автора</h1>
+<nav class="inner"><a href="#sec1">Раздел 1</a> <a href="#sec2">Раздел 2</a> <a href="#sec3">Раздел 3</a> <a href="#top">К началу</a></nav>
+<section id="sec1">
+<h2>Раздел 1. Топ-5 и критерии</h2>
+<div class="note">Подборка составлена по трём критериям: кофе, атмосфера, кухня. Это личное мнение автора — перед визитом проверьте часы работы на сайте кафе.</div>
+<h3 id="checklist">Топ-5 по версии автора</h3>
+<ol><li>Кафе «Пушкинъ» — интерьер в духе русской усадьбы на Тверском бульваре</li><li>Кофемания — большая сеть с завтраками и десертами</li><li>Surf Coffee — современный кофе и спокойная эстетика</li><li>Double B — кофейня для любителей спешалти-кофе</li><li>Шоколадница — демократичная сеть на каждый день</li></ol>
+<h3>Критерии выбора</h3>
+<ul><li>Кофе<ul><li>зерно и обжарка</li><li>мастерство бариста</li></ul></li><li>Атмосфера<ul><li>интерьер</li><li>музыка и свет</li></ul></li><li>Кухня<ul><li>завтраки</li><li>десерты</li><li>сезонное меню</li></ul></li></ul>
+<a class="up" href="#top">К началу</a>
+</section>
+<section id="sec2">
+<h2>Раздел 2. Фотогалерея</h2>
+<div class="figs"><figure><img src="images/cafes_1.svg" width="400" height="267" alt="Классический зал"><figcaption><b>Классический зал.</b> Просторный зал с большими окнами подходит для долгих завтраков.</figcaption></figure><figure><img src="images/cafes_2.svg" width="400" height="267" alt="Стойка бариста"><figcaption><b>Стойка бариста.</b> Здесь готовят эспрессо и фильтр-кофе из свежеобжаренных зёрен.</figcaption></figure></div>
+<p>Нажмите на миниатюру, чтобы открыть изображение 600×400 в новом окне по центру экрана.</p>
+<table class="thumbs"><tr><td><a href="images/cafes_big1.svg" target="_blank" onclick="return openCentered(this.href,600,400)"><img src="images/cafes_big1.svg" width="100" alt="Миниатюра: Классический зал"></a><br><small>Классический зал</small></td><td><a href="images/cafes_big2.svg" target="_blank" onclick="return openCentered(this.href,600,400)"><img src="images/cafes_big2.svg" width="100" alt="Миниатюра: Стойка бариста"></a><br><small>Стойка бариста</small></td></tr></table>
+<a class="up" href="#top">К началу</a>
+</section>
+<section id="sec3">
+<h2>Раздел 3. Где найти</h2>
+<table class="bgtable" style="background-image:url(images/bg.svg)">
+<tr><th>Кафе</th><th>Чем известно</th><th>Сайт</th></tr>
+<tr><td><img src="images/cell_cafes.svg" width="120" height="80" alt="Иллюстрация"></td><td colspan="2">Главное — выбрать место под своё настроение.</td></tr>
+<tr><td>Кафе «Пушкинъ»</td><td>Русская кухня, интерьер-усадьба</td><td><a href="https://cafe-pushkin.ru" target="_blank" rel="noopener">На сайт</a></td></tr><tr><td>Кофемания</td><td>Завтраки и десерты</td><td><a href="https://coffeemania.ru" target="_blank" rel="noopener">На сайт</a></td></tr><tr><td>Surf Coffee</td><td>Современные кофейни</td><td><a href="https://surfcoffee.ru" target="_blank" rel="noopener">На сайт</a></td></tr><tr><td>Double B</td><td>Спешалти-кофе</td><td><a href="https://doubleb.ru" target="_blank" rel="noopener">На сайт</a></td></tr>
+</table>
+<a class="up" href="#top">К началу</a>
+</section>
+</main>
+<footer>Учебный проект. Изображения — иллюстрации (SVG), замените их своими фото в папке images.</footer>
+<script src="js/script.js"></script>
+</body>
+</html>

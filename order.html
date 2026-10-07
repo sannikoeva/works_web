@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Бронь и отзыв — Лучшие кафе Москвы</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body id="top">
+<header>
+  <a class="logo" href="index.html" title="На главную"><img src="images/logo.svg" width="44" height="44" alt="Логотип"><span>Лучшие кафе Москвы</span></a>
+  <nav>
+    <div class="row"><a href="index.html">Главная</a> <a href="cafes.html">Рейтинг</a> <a href="center.html">Центр</a> <a href="coffee.html">Кофе и десерты</a> <a href="tips.html">Советы</a> <a href="contacts.html">Контакты</a> <a href="order.html" class="active" aria-current="page">Бронь и отзыв</a> <a href="tips.html#checklist">Чек-лист (закладка)</a></div>
+    <div class="row small">Задания JS: <a href="dom1.html">DOM_JS. Считываем информацию из DOM</a> <a href="dom2.html">Изменяем кириллицу на латиницу по клику</a> <a href="dom3.html">Решение алгоритмической задачи</a></div>
+    <div class="row small">Внешние сайты:
+      <a href="https://yandex.ru/maps/" target="_blank" rel="noopener"><img src="images/ic_map.svg" width="20" height="20" alt="Карта"> Яндекс Карты</a>
+      <a href="https://2gis.ru/moscow" target="_blank" rel="noopener">2ГИС</a>
+      <a href="https://www.afisha.ru/msk/restaurants/" target="_blank" rel="noopener">Афиша</a></div>
+  </nav>
+</header>
+<main>
+<h1>Бронь столика и отзыв</h1>
+<div class="note">Поля уже заполнены значениями по умолчанию, скрытое поле тоже уходит на сервер.</div>
+<form action="https://httpbin.org/post" method="post" target="_blank">
+<input type="hidden" name="source" value="cafes-moscow-site">
+<label>Имя гостя (text) <input type="text" name="guest_name" value="Гость" required></label>
+<label>Кафе <select name="cafe"><option>Кафе «Пушкинъ»</option><option>Кофемания</option><option>Surf Coffee</option><option>Double B</option></select></label>
+<label>Количество гостей (number) <input type="number" name="guests" min="1" max="12" value="2"></label>
+<label>Оценка кафе, 1–5 (number) <input type="number" name="rating" min="1" max="5" value="5"></label>
+<fieldset><legend>Время визита (radio)</legend>
+<label><input type="radio" name="visit_type" value="breakfast" checked> Завтрак</label>
+<label><input type="radio" name="visit_type" value="lunch"> Обед</label>
+<label><input type="radio" name="visit_type" value="dinner"> Ужин</label></fieldset>
+<fieldset><legend>Пожелания (checkbox)</legend>
+<label><input type="checkbox" name="wishes" value="window" checked> Столик у окна</label>
+<label><input type="checkbox" name="wishes" value="quiet"> Тихое место</label>
+<label><input type="checkbox" name="wishes" value="kids"> Детское меню</label></fieldset>
+<label>Дата визита (date) <input type="date" name="visit_date"></label>
+<label>Код брони (password) <input type="password" name="booking_code" value="1234"></label>
+<label>Отзыв <textarea name="review" rows="4">Отличное место!</textarea></label>
+<button type="submit">Отправить</button>
+</form>
+</main>
+<footer>Учебный проект. Изображения — иллюстрации (SVG), замените их своими фото в папке images.</footer>
+<script src="js/script.js"></script>
+</body>
+</html>
