@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <title>Бронь и отзыв — Лучшие кафе Москвы</title>
+</head>
+
+<body id="top">
+
+    <div>
+        <a href="index.html"><img src="images/coffelogo.jpeg" width="44" height="44" alt="Логотип"></a>
+        <b>Лучшие кафе Москвы</b>
+        
+        
+        <nav>
+            <a href="index.html">Главная</a>|
+            <a href="cafes.html">Рейтинг</a> |
+            <a href="center.html">Центр</a>|
+            <a href="coffee.html">Кофе и десерты</a> |
+            <a href="contacts.html">Контакты</a> |
+            <mark><b><a href="order.html">Бронь и отзыв</a></b></mark>|
+        </nav>
+
+    
+        <nav>
+            <span>Задания JS:</span>
+            <a href="dom1.html">DOM_JS. Считываем информацию из DOM</a> |
+            <a href="dom2.html">Изменяем кириллицу на латиницу по клику</a> |
+            <a href="dom3.html">Решение алгоритмической задачи</a>
+        </nav>
+
+    
+        <nav>
+            <span>Внешние сайты:</span>
+            <a href="https://yandex.ru/maps/" target="_blank"><img src="images/images.jpeg" width="20" height="20" alt="Карта"> Яндекс Карты</a> |
+            <a href="https://2gis.ru/moscow" target="_blank">2ГИС</a> |
+            <a href="https://www.afisha.ru/msk/restaurants/" target="_blank">Афиша</a>
+        </nav>
+    </div>
+
+    <hr>
+
+    <h1>Бронь столика и отзыв</h1>
+
+    <form action="https://httpbin.org/post" method="post" target="_blank">
+
+        <input type="hidden" name="source" value="cafes-moscow-site">
+        Имя гостя:
+        <input type="text" name="guest_name">
+        <br><br>
+
+        Кафе:
+        <select name="cafe">
+            <option>Кафе «Пушкинъ»</option>
+            <option>Кофемания</option>
+            <option>Surf Coffee</option>
+            <option>Double B</option>
+        </select>
+        <br><br>
+
+        Количество гостей:
+        <input type="number" name="guests" min="1" max="12" value="1">
+        <br><br>
+
+        Оценка (1–5):
+        <input type="number" name="rating" min="1" max="5" value="5">
+        <br><br>
+
+        Время визита:
+        <input type="radio" name="visit_type" value="breakfast" checked> Завтрак
+        <input type="radio" name="visit_type" value="lunch"> Обед
+        <input type="radio" name="visit_type" value="dinner"> Ужин
+        <br><br>
+
+        Пожелания:
+        <input type="checkbox" name="wishes" value="window" checked> У окна
+        <input type="checkbox" name="wishes" value="quiet"> Тихо
+        <input type="checkbox" name="wishes" value="kids"> Детское меню
+        <br><br>
+
+        Дата визита:
+        <input type="date" name="visit_date">
+        <br><br>
+
+        Код брони:
+        <input type="password" name="booking_code">
+        <br><br>
+
+        Отзыв:
+        <textarea name="review" rows="4" cols="40">Отличное место!</textarea>
+        <br><br>
+
+        <input type="submit" value="Отправить">
+
+    </form>
+
+    <hr>
+
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

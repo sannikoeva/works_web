@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <title>Изменяем кириллицу на латиницу по клику — Лучшие кафе Москвы</title>
+</head>
+
+<body id="top">
+
+    <div>
+        <a href="index.html"><img src="images/coffelogo.jpeg" width="44" height="44" alt="Логотип"></a>
+        <b>Лучшие кафе Москвы</b>
+        
+        
+        <nav>
+            <a href="index.html">Главная</a>|
+            <a href="cafes.html">Рейтинг</a> |
+            <a href="center.html">Центр</a> |
+            <a href="coffee.html">Кофе и десерты</a> |
+            <a href="contacts.html">Контакты</a>|
+            <a href="order.html">Бронь и отзыв</a> |
+        </nav>
+
+    
+        <nav>
+            <span>Задания JS:</span>
+            <a href="dom1.html">DOM_JS. Считываем информацию из DOM</a> |
+            <mark><b><a href="dom2.html">Изменяем кириллицу на латиницу по клику</a></b></mark> |
+            <a href="dom3.html">Решение алгоритмической задачи</a>
+        </nav>
+
+    
+        <nav>
+            <span>Внешние сайты:</span>
+            <a href="https://yandex.ru/maps/" target="_blank"><img src="images/images.jpeg" width="20" height="20" alt="Карта"> Яндекс Карты</a> |
+            <a href="https://2gis.ru/moscow" target="_blank">2ГИС</a> |
+            <a href="https://www.afisha.ru/msk/restaurants/" target="_blank">Афиша</a>
+        </nav>
+    </div>
+
+
+    <hr>
+
+    <h1>Изменяем кириллицу на латиницу по клику</h1>
+
+    <div>Фамилия и имя — в латиницу, год рождения — в римские цифры. Повторный клик возвращает исходные данные.</div>
+
+    <br>
+
+    <table border="1" cellpadding="8">
+        <tr>
+
+            <td valign="top">
+                <h3>Страница 2</h3>
+                <p><b>Паспорт выдан: </b><span>ОВД района Арбат г. Москвы</span></p>
+                <p><b>Дата выдачи: </b><span>20.03.2018</span></p>
+                <p><b>Код подразделения: </b><span>770-001</span></p>
+            </td>
+
+            <td valign="top">
+                <h3>Страница 3</h3>
+                <p><b>Фамилия: </b><span class="cyr">САННИКОВА</span></p>
+                <p><b>Имя: </b><span class="cyr">ЕВА</span></p>
+                <p><b>Отчество: </b><span>АНДРЕЕВНА</span></p>
+                <p><b>Пол: </b><span>ЖЕН.</span></p>
+                <p><b>Дата рождения: </b><span>09.05.<span class="yr">2009</span></p>
+                <p><b>Место рождения: </b><span>Г. МОСКВА</span></p>
+            </td>
+
+        </tr>
+    </table>
+
+    <br>
+
+    <button id="toLatin">Кириллица -> Латиница</button>
+
+    <hr>
+
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

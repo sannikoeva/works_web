@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <title>Рейтинг — Лучшие кафе Москвы</title>
+</head>
+
+<body id="top">
+    <div>
+        <a href="index.html"><img src="images/coffelogo.jpeg" width="44" height="44" alt="Логотип"></a>
+        <b>Лучшие кафе Москвы</b>
+        
+        
+        <nav>
+            <a href="index.html">Главная</a>|
+            <mark><b><a href="cafes.html">Рейтинг</a></b></mark> |
+            <a href="center.html">Центр</a> |
+            <a href="coffee.html">Кофе и десерты</a> |
+            <a href="contacts.html">Контакты</a> |
+            <a href="order.html">Бронь и отзыв</a> |
+        </nav>
+
+    
+        <nav>
+            <span>Задания JS:</span>
+            <a href="dom1.html">DOM_JS. Считываем информацию из DOM</a> |
+            <a href="dom2.html">Изменяем кириллицу на латиницу по клику</a> |
+            <a href="dom3.html">Решение алгоритмической задачи</a>
+        </nav>
+
+    
+        <nav>
+            <span>Внешние сайты:</span>
+            <a href="https://yandex.ru/maps/" target="_blank"><img src="images/images.jpeg" width="20" height="20" alt="Карта"> Яндекс Карты</a> |
+            <a href="https://2gis.ru/moscow" target="_blank">2ГИС</a> |
+            <a href="https://www.afisha.ru/msk/restaurants/" target="_blank">Афиша</a>
+        </nav>
+    </div>
+    
+
+
+    <hr>
+
+    <h1>Лучшие кафе Москвы: рейтинг</h1>
+
+    <div>
+        <a href="#sec1">Раздел 1</a> |
+        <a href="#sec2">Раздел 2</a> |
+        <a href="#sec3">Раздел 3</a> |
+        <a href="#top">К началу</a>
+    </div>
+
+
+    <h2 id="sec1">Раздел 1. Списки</h2>
+
+    <p>Моя подборка по трём критериям: кофе, атмосфера, кухня.</p>
+
+    <h3 id="checklist">Топ-4</h3>
+
+    <ol>
+        <li>Кафе «Пушкинъ» — интерьер русской усадьбы на Тверском бульваре</li>
+        <li>Кофемания — сеть с завтраками и десертами</li>
+        <li>Surf Coffee — вкусный и современный кофе</li>
+        <li>Double B — спешелти-кофе</li>
+    </ol>
+
+    <h3>Критерии выбора</h3>
+
+    <ul>
+        <li>Кофе
+            <ul>
+                <li>зерно</li>
+                <li>бариста</li>
+            </ul>
+        </li>
+        <li>Атмосфера
+            <ul>
+                <li>интерьер</li>
+                <li>музыка</li>
+            </ul>
+        </li>
+        <li>Кухня
+            <ul>
+                <li>завтраки</li>
+                <li>десерты</li>
+            </ul>
+        </li>
+    </ul>
+
+    <a href="#top">К началу</a>
+
+
+    <h2 id="sec2">Раздел 2. Изображения</h2>
+
+    <table>
+        <tr>
+            <td>
+                <img src="images/pushkin.jpeg" width="370" alt="Классический зал">
+                <br>
+                <b>Классический зал.</b>
+            </td>
+            <td>
+                <img src="images/doubleb.jpeg" width="400" alt="Стойка бариста">
+                <br>
+                <b>Стойка бариста.</b>
+            </td>
+        </tr>
+    </table>
+
+    <p>Нажмите на миниатюру — изображение 600×400 откроется в новом окне по центру.</p>
+
+    <table border="1" cellpadding="6">
+        <tr>
+            <td align="center">
+                <a href="images/pushkin.jpeg" target="_blank" onclick="return openCentered(this.href,600,400)">
+                    <img src="images/pushkin.jpeg" width="100" alt="Классический зал">
+                </a>
+            </td>
+            <td align="center">
+                <a href="images/doubleb.jpeg" target="_blank" onclick="return openCentered(this.href,600,400)">
+                    <img src="images/doubleb.jpeg" width="100" alt="Стойка бариста">
+                </a>
+            </td>
+        </tr>
+    </table>
+
+    <a href="#top">К началу</a>
+
+
+    <h2 id="sec3">Раздел 3. Где найти</h2>
+
+    <table border="1" cellpadding="8" width="100%" background="images/table17.jpeg">
+        <tr>
+            <th>Кафе</th>
+            <th>Чем известно</th>
+            <th>Сайт</th>
+        </tr>
+        <tr>
+            <td><img src="images/coffelogo.jpeg" width="120" alt="Иллюстрация"></td>
+            <td>Выбирайте место под настроение.</td>
+            <td>Как мне узнать о нем больше?</td>
+        </tr>
+        <tr>
+            <td>Кафе «Пушкинъ»</td>
+            <td>Русская кухня</td>
+            <td><a href="https://cafe-pushkin.ru" target="_blank">На сайт</a></td>
+        </tr>
+        <tr>
+            <td>Кофемания</td>
+            <td>Завтраки и десерты</td>
+            <td><a href="https://coffeemania.ru" target="_blank">На сайт</a></td>
+        </tr>
+        <tr>
+            <td>Surf Coffee</td>
+            <td>Современные кофейни</td>
+            <td><a href="https://surfcoffee.ru" target="_blank">На сайт</a></td>
+        </tr>
+        <tr>
+            <td>Double B</td>
+            <td>Спешалти-кофе</td>
+            <td><a href="https://doubleb.ru" target="_blank">На сайт</a></td>
+        </tr>
+    </table>
+
+    <a href="#top">К началу</a>
+
+    <hr>
+
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
